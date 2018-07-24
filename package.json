@@ -1,0 +1,35 @@
+{
+  "name": "xapis",
+  "version": "1.0.0",
+  "description": "Web API restify mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mangatur/XAPIs.git"
+  },
+  "keywords": [
+    "restify",
+    "mongodb",
+    "api",
+    "node",
+    "es6"
+  ],
+  "author": "Atur Aritonang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mangatur/XAPIs/issues"
+  },
+  "homepage": "https://github.com/mangatur/XAPIs#readme",
+  "dependencies": {
+    "mongodb": "^3.1.1",
+    "restify": "^7.2.1",
+    "restify-cors-middleware": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
