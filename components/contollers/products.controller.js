@@ -28,12 +28,13 @@ module.exports = exports = function (server) {
                         $unwind: "$category"
                     }, {
                         $project: {
+                            "_id": 1,
                             "initial": 1,
                             "name": 1,
                             "description": 1,
                             "price": 1,
-                            "_id": 1,
                             "categoryId": 1,
+                            "activate": 1,
                             "category.initial": 1,
                             "category.name": 1
                         }
