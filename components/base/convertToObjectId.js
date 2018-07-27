@@ -18,7 +18,4 @@ module.exports = function(entity){
     if(entity.modifyBy){
         entity.modifyBy = ObjectId(entity.modifyBy);
     }
-    if(entity._id){
-        delete entity._id;
-    }
 }
