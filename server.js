@@ -40,8 +40,14 @@ require('./components/contollers/categories.controller')(server);
 //product router
 require('./components/contollers/products.controller')(server);
 
-//test router
-require('./components/contollers/template.controller')(server, 'tests');
+//tables router
+require('./components/contollers/template.controller')(server, 'tables');
+
+//reservations router
+require('./components/contollers/template.controller')(server, 'reservations');
+
+//orders router
+require('./components/contollers/template.controller')(server, 'orders');
 
 server.listen(config.port, function(){
     console.log('%s listen at  %s', server.name, server.url);
