@@ -12,6 +12,18 @@ module.exports = function(entity){
     if(entity.productId){
         entity.productId = ObjectId(entity.productId);
     } 
+    if(entity.reservationId){
+        entity.reservationId = ObjectId(entity.reservationId);
+    }
+    if(entity.waiterId){
+        entity.waiterId = ObjectId(entity.waiterId);
+    }
+    if(entity.tableId){
+        entity.tableId = ObjectId(entity.tableId);
+    }
+    if(entity.orderId){
+        entity.orderId = ObjectId(entity.orderId);
+    }
     if(entity.createBy){
         entity.createBy = ObjectId(entity.createBy);
     } 
