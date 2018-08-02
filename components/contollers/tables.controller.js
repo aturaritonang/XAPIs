@@ -12,8 +12,8 @@ module.exports = exports = function (server) {
     server.get('/api/tabresord', (req, res, next) => {
         MongoClient.connect(config.dbconn, function (err, db) {
             if (err) throw err;
-            //dbo = db.db(config.dbname);
-            db.collection(name)
+            dbo = db.db(config.dbname);
+            dbo.collection(name)
                 .aggregate([
                     { $lookup: { 
                         from: 'reservations', 
