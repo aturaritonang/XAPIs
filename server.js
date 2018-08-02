@@ -41,7 +41,8 @@ require('./components/contollers/categories.controller')(server);
 require('./components/contollers/products.controller')(server);
 
 //tables router
-require('./components/contollers/template.controller')(server, 'tables');
+//require('./components/contollers/template.controller')(server, 'tables');
+require('./components/contollers/tables.controller')(server);
 
 //reservations router
 require('./components/contollers/template.controller')(server, 'reservations');
