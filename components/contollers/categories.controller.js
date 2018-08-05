@@ -2,10 +2,16 @@
 
 const MongoClient = require('mongodb').MongoClient;
 const templateCtrl = require('./template.controller');
+const model = {
+    initial : '',
+    name : '', 
+    active: 0
+}
 
 module.exports = exports = function(server){
     let name = 'categories';
     let dbo;
+    
     templateCtrl(server, name);
     server.get('/api/categoryName', (req, res, next) => {
         MongoClient.connect(config.dbconn, function (err, db) {
